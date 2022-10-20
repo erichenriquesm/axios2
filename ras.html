@@ -1,0 +1,20 @@
+<tr style="display: block;" id="edit">
+    <form action="editar.php" method="post">
+      <td><?php echo $id ?></td>
+
+      <input type="hidden" name="id" value="<?php echo $id ?>">
+
+      <td><input type="email" name="email" id="email" value="<?php echo $email ?>"></td>
+
+      <td><input type="text " value="<?php echo $nome ?>"></td>
+
+      <td><input type="text" value="<?php echo $telefone ?>"</td>
+    
+      <td class="crud">
+      <button onclick="editar()" type="button" class="btn btn-primary">Editar<i class="fa-regular fa-pen-to-square"></i></a></button>
+    </form>
+
+      <button type="submit" class="btn btn-danger">Excluir <i class="fa-solid fa-trash"></i></button>
+      <input type="hidden" name="id" value="<?php echo $id ?>">
+      </td>
+  </tr>
